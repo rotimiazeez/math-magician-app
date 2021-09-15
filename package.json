@@ -37,6 +37,8 @@
     ]
   },
   "devDependencies": {
+    "@babel/eslint-parser": "^7.15.4",
+    "@babel/eslint-plugin": "^7.14.5",
     "stylelint": "^13.13.1",
     "stylelint-config-standard": "^21.0.0",
     "stylelint-csstree-validator": "^1.9.0",
