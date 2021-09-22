@@ -17,7 +17,7 @@ function App() {
   const styles = [
     {
       display: 'flex',
-      justifyContent: 'space-around',
+      justifyContent: 'space-between',
     },
 
     {
@@ -44,7 +44,7 @@ function App() {
   return (
     <>
       <Router>
-        <div style={styles[4]}>
+        <div style={styles[1][4]}>
           <div style={styles[0]}>
             <h1 style={styles[5]}> Math Magicians</h1>
             <nav>
