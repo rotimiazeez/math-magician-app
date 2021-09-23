@@ -1,0 +1,23 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`pages test snapshots testing Calculator page 1`] = `
+<button
+  class="bottom"
+  name="0"
+  type="button"
+>
+  0
+</button>
+`;
+
+exports[`pages test snapshots testing Quote page 1`] = `
+<p>
+  "We will always have STEM with us. Some things will drop out of the public eye and go away, but there will always be science, engineering, and technology. And there will always, always be mathematics". — Katherine Johnson, African-American mathematician
+</p>
+`;
+
+exports[`pages test snapshots testing home page 1`] = `
+<h4>
+   Welcome to our page
+</h4>
+`;
