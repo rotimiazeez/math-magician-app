@@ -59,3 +59,10 @@ input[type="text"] {
 .bottomIII {
   left: 254px;
 }
+
+footer {
+  position: fixed;
+  left: 0;
+  bottom: -5px;
+  width: 100%;
+}
