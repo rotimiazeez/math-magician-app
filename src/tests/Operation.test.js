@@ -44,16 +44,16 @@ describe('testing operations', () => {
 describe('testing calculations', () => {
   test('dividing two numbers', () => {
     let obj = { total: null };
-    obj = calculate(obj, '8');
+    obj = calculate(obj, '6');
     obj = calculate(obj, '÷');
     obj = calculate(obj, '2');
     obj = calculate(obj, '=');
-    expect(obj.total).toEqual('4');
+    expect(obj.total).toEqual('3');
   });
 
   test('dividing by 0', () => {
     let obj = { total: null };
-    obj = calculate(obj, '8');
+    obj = calculate(obj, '10');
     obj = calculate(obj, '÷');
     obj = calculate(obj, '0');
     obj = calculate(obj, '=');
@@ -62,15 +62,15 @@ describe('testing calculations', () => {
 
   test('display nothing before operation is complete', () => {
     let obj = { total: null };
-    obj = calculate(obj, '2');
-    obj = calculate(obj, '1');
+    obj = calculate(obj, '7');
+    obj = calculate(obj, '6');
     obj = calculate(obj, '=');
     expect(obj.total).toEqual(undefined);
   });
 
   test('return null when user presses AC', () => {
     let obj = { total: null };
-    obj = calculate(obj, '9');
+    obj = calculate(obj, '8');
     obj = calculate(obj, 'AC');
     expect(obj.total).toBeFalsy();
   });
@@ -79,7 +79,7 @@ describe('testing calculations', () => {
     let obj = { next: null };
     obj = calculate(obj, '1');
     obj = calculate(obj, '.');
-    obj = calculate(obj, '5');
-    expect(obj.next).toEqual('1.5');
+    obj = calculate(obj, '6');
+    expect(obj.next).toEqual('1.6');
   });
 });
